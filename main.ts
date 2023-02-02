@@ -36,20 +36,20 @@ input.onButtonPressed(Button.B, function () {
         basic.showString("Draw!")
     } else {
         if (computer_choice < player1_choice) {
-            if (computer_choice == 2 && player1_choice == 0) {
-                basic.showString("Computer Wins")
+            if (computer_choice == 0 && player1_choice == 2) {
+                basic.showString("Player Wins!")
                 game.setScore(1)
                 basic.showString("" + (game.score()))
             } else {
-                basic.showString("Player Wins!")
+                basic.showString("Computer Wins!")
                 game.setScore(1)
                 basic.showString("" + (game.score()))
             }
         } else {
-            if (player1_choice == 2 && computer_choice == 0) {
-                basic.showString("Computer Loses")
+            if (player1_choice == 0 && computer_choice == 2) {
+                basic.showString("Lose")
             } else {
-                basic.showString("Player Loses")
+                basic.showString("Lose")
             }
         }
     }
