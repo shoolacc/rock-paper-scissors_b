@@ -42,8 +42,6 @@ input.onButtonPressed(Button.B, function () {
                 basic.showString("" + (game.score()))
             } else {
                 basic.showString("Computer Wins!")
-                game.setScore(1)
-                basic.showString("" + (game.score()))
             }
         } else {
             if (player1_choice == 0 && computer_choice == 2) {
