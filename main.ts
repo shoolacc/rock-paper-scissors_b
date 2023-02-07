@@ -37,19 +37,19 @@ input.onButtonPressed(Button.B, function () {
     } else {
         if (computer_choice < player1_choice) {
             if (computer_choice == 0 && player1_choice == 2) {
-                basic.showString("Win!")
+                basic.showString("Player Wins!")
                 game.setScore(1)
                 basic.showString("" + (game.score()))
             } else {
-                basic.showString("Win!")
+                basic.showString("Computer Wins!")
                 game.setScore(1)
                 basic.showString("" + (game.score()))
             }
         } else {
             if (player1_choice == 0 && computer_choice == 2) {
-                basic.showString("Lose")
+                basic.showString("Player Loses")
             } else {
-                basic.showString("Lose")
+                basic.showString("Computer Loses")
             }
         }
     }
